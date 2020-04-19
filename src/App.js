@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <Header>
-        <Logo repeat={5} />
+        <Logo />
         <Text />
         <Link />
       </Header>
