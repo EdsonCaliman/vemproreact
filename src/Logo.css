@@ -1,11 +1,19 @@
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+}
+
+.App-logo-container {
+  display: flex;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 10s linear reverse;
+    animation: App-logo-spin infinite 10s linear;
+  }
+
+  .App-logo:nth-child(even) {
+    animation-direction: reverse;
   }
 }
 
