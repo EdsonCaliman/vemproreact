@@ -1,7 +1,7 @@
 import React from "react";
 import "./Link.css";
 
-function Link() {
+const Link = () => {
   return (
     <a
       className="App-link"
@@ -12,6 +12,6 @@ function Link() {
       Learn React
     </a>
   );
-}
+};
 
 export default Link;

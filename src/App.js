@@ -3,17 +3,18 @@ import "./App.css";
 import Logo from "./Logo";
 import Text from "./Text";
 import Link from "./Link";
+import Header from "./Header";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header>
         <Logo />
         <Text />
         <Link />
-      </header>
+      </Header>
     </div>
   );
-}
+};
 
 export default App;
