@@ -13,14 +13,13 @@ const Logo = (props) => {
   return (
     <>
       <div className="App-logo-container">{imgs}</div>
-      <div>
+      <div className="App-logo-buttons">
         <button
           disabled={repeat === 6}
           onClick={() => setRepeat((repeat) => repeat + 1)}
         >
           Incrementar
         </button>
-        {"  "}
         <button
           disabled={repeat === 1}
           onClick={() => setRepeat((repeat) => repeat - 1)}
