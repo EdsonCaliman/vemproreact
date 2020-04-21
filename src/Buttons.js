@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button, Typography } from '@bayon/commons';
 import "./Buttons.css";
 
 const Buttons = ({ repeat, setRepeat }) => {
@@ -17,20 +18,20 @@ const Buttons = ({ repeat, setRepeat }) => {
   return (
     <>
       <div className="App-logo-buttons">
-        <button disabled={repeat === 6} onClick={handleClickPlus}>
+        <Button variant="primary" disabled={repeat >= 6} onClick={handleClickPlus}>
           Incrementar
-        </button>
-        <button disabled={repeat === 1} onClick={handleClickMinus}>
+        </Button>
+        <Button disabled={repeat === 1} onClick={handleClickMinus}>
           Decrementar
-        </button>
+        </Button>
       </div>
       <div>
-        <p>
+        <Typography lineHeight={2} size={16}>
           <b>Logo +</b> button was clicked {countPlus} times
-        </p>
-        <p>
+        </Typography>
+        <Typography lineHeight={2} size={16}>
           <b>Logo -</b> button was clicked {countMinus} times
-        </p>
+        </Typography>
       </div>
     </>
   );

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { Button} from '@bayon/commons';
 import "./App.css";
 import Logo from "./Logo";
 import Text from "./Text";
-import Link from "./Link";
 import Header from "./Header";
 import Buttons from "./Buttons";
 
@@ -15,7 +15,9 @@ const App = () => {
         <Logo repeat={repeat} setRepeat={setRepeat} />
         <Buttons repeat={repeat} setRepeat={setRepeat} />
         <Text />
-        <Link />
+        <Button variant="subtle" href="https://reactjs.org" target="_blank">
+           Learn React
+        </Button>
       </Header>
     </div>
   );
